@@ -10,11 +10,7 @@ html
             span.icon-bar
             span.icon-bar
           a.navbar-brand(href="#") Test
-        #navbar.collapse.navbar-collapse 
-            ul.nav.navbar-nav
-                li(class=(title === 'Members' ? 'active' : ''))
-                    a(href="/") Members
-                if !user
+       
                         li(class=(title === 'Register' ? 'active' : ''))
                             a(href="/users/register") Register
                         li(class=(title === 'Log In' ? 'active' : ''))
