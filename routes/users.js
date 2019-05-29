@@ -68,10 +68,7 @@ router.post('/register', function(req, res, next){
           //profileimage: profileimagename          
         });
 
-        User.createUser(newUser, function(err, user){
-          if(err) throw err;
-          console.log(user);
-        });
+      
 
         req.flash('success', 'You are registered and may log in');
 
